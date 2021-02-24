@@ -1,0 +1,26 @@
+&change_particle
+  name = electron
+&end
+
+&run_setup
+    lattice       = lte_file/ecr.lte,
+    use_beamline  = ecr_noise,
+    p_central_mev = 3000.0,
+&end
+
+&alter_elements
+    name=N1,
+    item=X,
+    value=1.6e-6
+&end
+
+&run_control
+    n_passes = 1
+&end
+
+&sdds_beam
+    input = sdds_file/ecr_start.sdds,
+&end
+
+&track &end
+&stop &end

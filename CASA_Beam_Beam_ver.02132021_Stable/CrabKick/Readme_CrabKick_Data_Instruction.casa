@@ -1,0 +1,22 @@
+
+
+
+
+
+    ****************************************************************************
+    *                                                                          *
+    *      Thanks for using CrabKick Code of JLab-CASA Beam-Beam.              *
+    *                                                                          *
+    ****************************************************************************
+
+
+
+    The CrabKick results are put it into the folder "CrabKick/Files_of_Output".
+
+    After kickings, the details of two beams can be catched on the sdds-files.
+    
+    The RMS-sizes of the beams and the luminosity for each kicking are given in
+    "sigma_beam1.casa", "sigma_beam2.casa" and "Luminosity.casa".   The unit of
+    RMS_size is (m). The unit of Luminosity is 1/(cm^2s). Each line of the data
+    means one turn.
+    

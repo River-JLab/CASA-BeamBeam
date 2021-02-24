@@ -1,0 +1,29 @@
+&change_particle
+  name = proton
+&end
+
+&run_setup
+    lattice       = lte_file/icr.lte,
+    use_beamline  = icr_start_ele,
+    p_central_mev = 40000.0,
+&end
+
+&run_control
+    n_passes = 1
+&end
+
+&bunched_beam
+    n_particles_per_bunch = 10000.0,
+    emit_nx = 5e-07,
+    emit_ny = 2e-07,
+    beta_x = 0.08,
+    beta_y = 0.013,
+    sigma_dp = 0.0003,
+    sigma_s = 0.025,
+    distribution_type[0] = "gaussian","gaussian","gaussian"
+    enforce_rms_values[0] = 0, 0, 1
+    distribution_cutoff[0] = 3, 3, 3
+&end
+
+&track &end
+&stop &end

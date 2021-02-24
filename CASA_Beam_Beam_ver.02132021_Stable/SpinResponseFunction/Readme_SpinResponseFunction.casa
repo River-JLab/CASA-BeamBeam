@@ -1,0 +1,15 @@
+
+
+   *********************************************************************
+   *                                                                   *
+   *  Thanks for using "SpinResponseFunction" of JLab-CASA Beam-Beam.  *
+   *                                                                   *
+   *                              Vasiliy Morozov and River Huang      *
+   *                                                    2018-2019      *
+   *                                                                   *
+   *********************************************************************
+
+    If you have the twiss data, please make sure the data-file is put
+    into the folder "SpinResponseFunction/Files_of_Input".
+
+    If don't have Twiss data, please generate it via MAD-X or Zgoubi.

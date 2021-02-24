@@ -1,0 +1,30 @@
+&change_particle
+  name = electron
+&end
+
+&run_setup
+    lattice       = lte_file/ecr.lte,
+    use_beamline  = ecr_start_ele,
+    p_central_mev = 10.0,
+    random_number_seed = 709,
+&end
+
+&run_control
+    n_passes = 1
+&end
+
+&bunched_beam
+    n_particles_per_bunch = 10000.0,
+    emit_nx = 1e-06,
+    emit_ny = 5e-08,
+    beta_x = 0.045,
+    beta_y = 0.003,
+    sigma_dp = 0.00045,
+    sigma_s = 0.001,
+    distribution_type[0] = "gaussian","gaussian","gaussian"
+    enforce_rms_values[0] = 0, 0, 1
+    distribution_cutoff[0] = 6, 6, 6
+&end
+
+&track &end
+&stop &end

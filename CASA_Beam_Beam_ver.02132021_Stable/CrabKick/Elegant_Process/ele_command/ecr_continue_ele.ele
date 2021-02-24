@@ -1,0 +1,20 @@
+&change_particle
+  name = electron
+&end
+
+&run_setup
+    lattice       = lte_file/ecr.lte,
+    use_beamline  = ecr_continue_ele,
+    p_central_mev = 10.0,
+&end
+
+&run_control
+    n_passes = 1
+&end
+
+&sdds_beam
+    input = sdds_file/ecr_start.sdds,
+&end
+
+&track &end
+&stop &end

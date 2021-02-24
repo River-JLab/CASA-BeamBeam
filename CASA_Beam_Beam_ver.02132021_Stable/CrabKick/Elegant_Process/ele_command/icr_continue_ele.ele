@@ -1,0 +1,20 @@
+&change_particle
+  name = positron
+&end
+
+&run_setup
+    lattice       = lte_file/icr.lte,
+    use_beamline  = icr_continue_ele,
+    p_central_mev = 510.0,
+&end
+
+&run_control
+    n_passes = 1
+&end
+
+&sdds_beam
+    input = sdds_file/icr_start.sdds,
+&end
+
+&track &end
+&stop &end

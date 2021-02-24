@@ -1,0 +1,21 @@
+positron            electron            # Suffix will be automatically added to filename.
+-----------------------------------------------------------------------------------------
+icr                 ecr                 # mtr_filename  
+icr                 ecr                 # lte_filename
+icr_start_ele       ecr_start_ele       # start_ele_filename
+icr_continue_ele    ecr_continue_ele    # continue_ele_filename
+icr_start           ecr_start           # start_sdds_filename
+icr_end             ecr_end             # end_sdds_filename
+0.026               0.045               # beta_x (m) 
+0.009               0.003               # beta_y (m)
+0.0                 0.0                 # alpha_x
+0.0                 0.0                 # alpha_y
+0.0                 0.0                 # nu_x
+0.0                 0.0                 # nu_y
+0.0                 0.0                 # nu_s
+20.0e-3             1.0e-3              # sigma_s (m)
+4.5e-4              4.5e-4              # sigma_p
+87.0e-6             1.0e-6              # normalized_emit_nx (horizontal) (m)
+0.87e-6             0.05e-6             # normalized_emit_ny (vertical)   (m)
+0.51e3              0.01e3              # partical_central energy (MeV)
+1.0e4               1.0e4               # number_of_"macro_particles"_per_bunch

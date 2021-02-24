@@ -1,0 +1,5 @@
+STM: MATR, L=0.0, filename="mtr_file/icr.mtr"; 
+W1: WATCH,mode="coordinates",filename="sdds_file/icr_start.sdds",interval=1; 
+W2: WATCH,mode="coordinates",filename="sdds_file/icr_end.sdds",interval=1; 
+icr_start_ele: LINE=(W1)
+icr_continue_ele: LINE=(STM,W2)

@@ -1,0 +1,10 @@
+parameters_data_input.twi                   # Twiss data file
+Spin_Response_Function.casa                 # Filename of the Spin-Response calculation result 
+Zero_Integer_Spin_Resonance_Strength.casa   # Filename of the Spin-Response calculation result
+----------------------------------------------------------------------------------------------- 
+1.1            8.9                          # Energy range (GeV)
+78                                          # Time steps for Energy calculation
+1.79284739                                  # Particle's anomalous magnetic moment
+0.038                                       # delta_/phi (mrad) rms
+0.007                                       # delta_y (mm) rms
+1.5707963267948966192313216916398           # Angle between Snake-axis and the radial direction

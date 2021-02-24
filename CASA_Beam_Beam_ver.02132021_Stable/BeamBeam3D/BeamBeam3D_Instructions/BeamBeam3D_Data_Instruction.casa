@@ -1,0 +1,27 @@
+
+
+
+
+
+
+    Thanks for using BeamBeam3D via CASA Beam-Beam.
+
+
+
+    CASA Beam-Beam picked off "Luminosity" and "all the RMS sizes of the bunches"
+    and put it into the folder "BeamBeam3D_Output_Data_CASA".
+
+
+    BeamBeam3D instruction can be catched on "BeamBeam3D_instructions.doc" in the
+    folder "BeamBeam3D_Instructions"
+
+    All other results of BeamBeam3D are given in the folder "BeamBeam3D".
+    For examples,
+
+    ------------------------------------------------------------------------------
+    File fort.x4 (for X) fort.x5 (for Y), fort.x6 (for Z): RMS size information
+    Here, x can be 2,3,4,5,6,7..., depending on the number of bunches.
+    ------------------------------------------------------------------------------
+    1st col: turn
+    3rd col: RMS size (m)
+    ------------------------------------------------------------------------------

@@ -1,0 +1,23 @@
+positron            electron            # Name_of_beam
+--------------------------------------------------------------------------------------------------------------------
+icr_start.sdds      ecr_start.sdds      # Input_Beam_sdds_data_filename
+icr_end.sdds        ecr_end.sdds        # Output_Beam_sdds_data_filename
+sigma_beam1.casa    sigma_beam2.casa    # Beam_RMS_size_filename
+--------------------------------------------------------------------------------------------------------------------
+2.8179409e-15       2.8179409e-15       # Classical_Radius(unit: m); Example: rp=1.5346980e-18 re=2.8179409e-15
+1.4e10              0.18e10             # Number_of_particles_per_bounch
+2.99792458e8                            # Light_Speed(unit: m/s)
+1                                       # Interaction_Case. 1: weak-weak or strong-strong; 2: weak-strong
+--------------------------------------------------------------------------------------------------------------------
+0.0                                     # half Crossing_Angle at x-s plane (unit: radian) 
+0.0                                     # half Crossing_Angle: no crossing angle at y-s plane !!
+0.0                 0.0                 # Tilt_Angle_of_Beam(unit: degree)
+--------------------------------------------------------------------------------------------------------------------
+356.0e6                                 # Collision_Frequency
+-1                                      # Force_Sign. 1: Electron-Electron or Proton-Proton; -1: Electron-Proton
+2                                       # Number_of_Turn
+30                  20                  # Number_of_Slices_of_Beam
+--------------------------------------------------------------------------------------------------------------------
+1                                       # sdds-data output frequency. "-1": just records the last turn.
+no                                      # 'yes/no': Record/No-record the details of phase-oordinates in Boost-Frame
+1                                       # Phase output: '1'-(x, xp, y, yp, t, p), '2'-(x, xp, y, yp, z, dp/p0)

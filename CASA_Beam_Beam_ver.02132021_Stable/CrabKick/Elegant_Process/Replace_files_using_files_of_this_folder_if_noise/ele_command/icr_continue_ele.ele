@@ -1,0 +1,26 @@
+&change_particle
+  name = proton
+&end
+
+&run_setup
+    lattice       = lte_file/icr.lte,
+    use_beamline  = icr_noise,
+    p_central_mev = 40000.0,
+&end
+
+&alter_elements
+    name=N1,
+    item=X,
+    value=1.6e-6
+&end
+
+&run_control
+    n_passes = 1
+&end
+
+&sdds_beam
+    input = sdds_file/icr_start.sdds,
+&end
+
+&track &end
+&stop &end

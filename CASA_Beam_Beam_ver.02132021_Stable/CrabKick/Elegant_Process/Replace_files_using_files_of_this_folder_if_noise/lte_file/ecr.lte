@@ -1,0 +1,8 @@
+STM: MATR, L=0.0, filename="mtr_file/ecr.mtr"; 
+W1: WATCH,mode="coordinates",filename="sdds_file/ecr_start.sdds",interval=1; 
+W2: WATCH,mode="coordinates",filename="sdds_file/ecr_end.sdds",interval=1; 
+N1: scatter;
+N2: center;
+ecr_start_ele: LINE=(W1)
+ecr_continue_ele: LINE=(STM,W2)
+ecr_noise: LINE=(N2,STM,N1,W2)

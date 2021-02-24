@@ -1,0 +1,37 @@
+2 1                                             Npcol, Nprow
+6 10000                                         # phase space, # macro-particles
+128 128 2048                                    # gridpoints in x, y, z
+20                                              # longitudinal slices 
+2                                               # number of turns
+2                                               initial distribution (2 Gaussian)
+48.0e-6 0.045 0.0 1.0 1.0 0.0 0.0          x: sig_x, beta_x, al, x-sc, px-sc, cn. x, cn px
+2.8e-6 0.003 0.0 1.0 1.0 0.0 0.0           y: sig_y, beta_y, al, y-sc, py-sc, cn. y, cn py
+1.0e-3 4.5e-4 0.0 1.0 1.0 0.0 0.0          rms-bunch-length, rms dp/p0, al, s,s,c,c
+0.18e10 0.01e9 0.00051099906e9 -1.0        # particles, energy, mass, charge
+62.31d0 60.32d0 0.002d0                         betatron tune x, y, synchrotron tune
+0.0 0.0                                         alpha_x, alpha_y
+0.045 0.003                                 beta_x, beta_y
+51.0e-9 2.55e-9                            emittance x, y(Un-normalized emittance)
+1.e9 0. 0. 0                                    damp. t (turn) in x,y,z; switch (0,1,2)
+1.0e-3 4.5e-4                               rms z, rel. mom. spread
+0 0.0 0.00                                      switch for sweeping; sweeping tune
+0 0.0 0.0 0.0 0.0                               orbit feedback control: 0 - no feedback
+0 20                                            close orbit squeez., # turns to 0
+0.0 0.0                                         x-coor., y-coor. of close orbit
+1.0e-3 4.5e-4                               rms z, rms pz
+0.0 0.00                                    cross ang alpha (x in x-y), phi (s s-x)
+0 0 0 0 0                                       fix.cmp.dm., var.slc., ext.mp, ext.2nd mp, ext.3rd map, ext. 4th map
+1                                               # of collisions per turn
+-1e-2 1e-2 -1e-2 1e-2 0.0 3e-2                  comp.dom: xmin,xmax,ymin,ymax,zmin,zmax
+2 1                                             PE group, type of s-w interaction
+0.0 0.0                                         x and y linear chromaticity
+0.                                              curvature of ring
+1                                               luminosity ouput frequency
+1 1                                             # of bunches, # of steps per turn
+0 10000 1                                       restart flag, max time for output (sec), flag whether to save all particles
+200000000                                       # turns to reset initial distribution.
+1 1 1                                           sampling rate for phase space, fraction of particles for phase space, sampling rate for "RMS and moments"
+0.0d0 0.0d0 0.0d0 0.0d0                         FB gains related to BPMs: hor., sector 7; h. s. 9; v. s. 7; v. s. 9
+4.d3 0.0 0.0 0.0 0.0                            beta at crab cavity (m), crab frequency (Hz)
+2 8 25000                                       xy series: number of particles, length (turns), repetition rate (turns)
+
